@@ -8,7 +8,6 @@ class App extends Component {
   };
 
   handleOnPasswordInput(passwordInput) {
-    console.log(zxcvbn(passwordInput));
     const { score } = zxcvbn(passwordInput);
     this.setState({ passwordScore: score });
   }
